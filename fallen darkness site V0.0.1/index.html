@@ -1,0 +1,111 @@
+<html>
+<head>
+<title>FallenDarkness</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body {font-family: Arial;}
+
+/* Style the tab */
+.tab {
+  overflow: hidden;
+  border: 1px solid rgb(255, 0, 0);
+  background-color: #2e32f8;
+}
+
+/* Style the buttons inside the tab */
+.tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+  font-size: 17px;
+}
+
+/* Change background color of buttons on hover */
+.tab button:hover {
+  background-color: rgb(250, 0, 0);
+}
+
+/* Create an active/current tablink class */
+.tab button.active {
+  background-color: rgb(60, 255, 0);
+}
+
+/* Style the tab content */
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border: 1px solid rgb(226, 0, 0);
+  border-top: none;
+}
+</style>
+</head>
+<body style="background-color: #7efff5;">
+
+
+
+<div class="tab">
+  <button class="tablinks" onclick="openCity(event, 'Anasayfa')">Anasayfa</button>
+  <button class="tablinks" onclick="openCity(event, 'Hakkımızda')">Hakkımızda</button>
+  <button class="tablinks" onclick="openCity(event, 'İletişim')">İletişim</button>
+</div>
+
+<div id="Anasayfa" class="tabcontent">
+  <h1><strong>FallenDarkness Resmi Websitesi</strong></h1>
+  <p>>Discordumuzun resmi websitesine hoşgeldiniz.</font></p>
+  <p>Size burda bize katıldığınızda ne gibi yararlar kazanacağınızı anlatıcağım.</p>
+  <p><b>Biz arkadaşlık ve topluluğu harmanlamaya çalışırız. Biz sıradan bir topluluk değiliz.</b> biz yeni çevre yeni arkadaşlıklar ve yeni kültürler arıyoruz.</p>
+  <img src="fallendarknesslogo512x512.png" >
+  <p>Sürekli kendimi geliştirmeye çalışıp daha iyi olmayı amaçlıyoruz ve bu yolda adım adım ilerliyoruz.</p>
+  <p>Evet buraya gelene kadar daha doğrusu anlayana kadar<b> çok kişi kaybettik onlar gözümüzü açtılar.</b></p>
+</div>
+
+<div id="Hakkımızda" class="tabcontent">
+  <h3>Biz Kimiz?</h3>
+  <p>Kısaca anlatmak gerekirse <b>biz toplulukdan daha öte olmaya çalışan</b>  <mark>bir arkadaş grubuyuz.</mark></p>
+  <p>Kuruluşumuzdan bahsetmek istersek aslında başlangıcımız <b>bu fikirlerden çok uzaktı.</b></p> 
+  <p>bu discordu açarken aslında bir beklentimiz yoktu zaten 3 kişiydik. İlerleyen zamanlarda insanlar gelmeye başlayınca <b>evet bizde o hataya düştük...</b> <u>Topluluk olmaya karar verdik.</u></p>
+  <img src="insan.jpg" width="350"> 
+  <p>Evet o karardan sonra dahada büyüdük ama birşey fark ettik sonra kendimize dedikki;<b>"Topluluk ihtiyacımız olan şey değildi"</b> Bu sözden sonra <mark>bu siteyi hazırlayarak bu fikir ile yolumuza başlamış olduk.</mark></p>
+  <p>Dediğim gibi işte bu yüzden yeni insanlara yeni arkadaşlıklara yani <b>size ihtiyacımız var.</b></p>
+</div>
+
+<div id="İletişim" class="tabcontent">
+  <h3>Bize Ulaşmak İçin.</h3>
+  <p><b>İLETİŞİM İÇİN KULLANDIĞIMIZ EMAİL;</b><mark>fallendarknes4@gmail.com</mark></p>
+  <iframe src="https://discordapp.com/widget?id=595317250681208867&theme=dark" width="350" height="500" allowtransparency="true" frameborder="0" sandbox="allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"></iframe>
+  
+</div>
+
+<script>
+function openCity(evt, cityName) {
+  var i, tabcontent, tablinks;
+  tabcontent = document.getElementsByClassName("tabcontent");
+  for (i = 0; i < tabcontent.length; i++) {
+    tabcontent[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablinks");
+  for (i = 0; i < tablinks.length; i++) {
+    tablinks[i].className = tablinks[i].className.replace(" active", "");
+  }
+  document.getElementById(cityName).style.display = "block";
+  evt.currentTarget.className += " active";
+}
+</script>
+<audio controls>
+  <source src="şarkı 1.webm" type="audio/ogg">
+  <source src="şarkı 1.webm" type="audio/mpeg">
+</audio>
+
+
+
+
+
+
+
+
+</body>
+</html> 
